@@ -1,0 +1,15 @@
+server:
+  port: 8767
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wangkai5671992/spring-cloud-demo/tree/master/config-server
+          search-paths: configers
+          username:
+          password:
+      label: master
+
